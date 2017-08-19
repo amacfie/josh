@@ -11,7 +11,7 @@ exports.checkNow = function () {
       continue;
     }
     servernames.forEach(
-      (sn) => shell.exec(`nvr -c "checktime" --servername ${sn}`) );
+      (sn) => shell.exec(`NVR_CMD=echo nvr -c "checktime" --servername ${sn}`) );
   }
 };
 
