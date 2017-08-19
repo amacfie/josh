@@ -32,7 +32,7 @@ var myWriter = function(output) {
 
 // terminal:false disables readline (just like env NODE_NO_READLINE=1):
 var myrepl = require("repl").start({
-  terminal: true,
+  terminal: false,
   prompt: colors.green('% '),
   ignoreUndefined: true,
   useColors: true,
