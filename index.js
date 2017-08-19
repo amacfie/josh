@@ -23,7 +23,7 @@ var myWriter = function(output) {
     var stdoutPart = output.stdout || '';
     return colors.cyan(stderrPart + stdoutPart);
   } else {
-    if (typeof output === 'object') {
+    if (output && typeof output === 'object') {
       delete output['__inspect'];
     }
     return util.inspect(output, null, null, true);
