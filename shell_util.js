@@ -15,3 +15,7 @@ exports.checkNow = function () {
   }
 };
 
+exports.stripExtension = function (fn) {
+  return fn.replace(/\.[^/.]+$/, '');
+};
+
